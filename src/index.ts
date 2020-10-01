@@ -7,7 +7,7 @@ import Controller from './controllers/index';
 
 const koa = new Koa();
 
-const PORT = 3003;
+const PORT = process.env.PORT || 3003;
 
 Controller(koa);
 
